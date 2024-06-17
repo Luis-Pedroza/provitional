@@ -1,0 +1,146 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    min-height: 9vh;
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+}
+
+.page-title {
+    flex: 1;
+    text-align: center;
+}
+
+.navigation {
+    flex: 1;
+    text-align: right;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    min-height: 70vh;
+    padding: 20px;
+    box-sizing: border-box;
+   
+}
+
+.personal-info, .services {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px;
+    flex: 1;
+}
+
+/* Estilos para la lista de servicios */
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services li {
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.services li:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    flex-shrink: 0;
+    min-height: 10vh;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.scroll-to-top {
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.scroll-to-top:hover {
+    text-decoration: underline;
+}
+/* Estilos responsivos */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo, .page-title, .navigation {
+        flex: none;
+        width: 100%;
+    }
+
+    .navigation ul {
+        margin-top: 20px;
+    }
+    .main-content {
+        flex-grow: 1; /* Para que ocupe el espacio restante y empuje el footer hacia abajo */
+        display: flex;
+        flex-direction: column;
+    }
+    .personal-info, .services {
+        margin: 20px 0;
+    }
+}
