@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    min-height: 9vh;
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+}
+
+.page-title {
+    flex: 1;
+    text-align: center;
+}
+
+.navigation {
+    flex: 1;
+    text-align: right;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+    flex-wrap: wrap;
+    min-height: 70vh;
+}
+
+.service-info, .service-gallery {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    max-width: 45%;
+}
+
+.service-info h2, .service-gallery h2 {
+    margin-top: 0;
+}
+
+.image-reel {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.image-reel img {
+    border-radius: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    min-height: 9vh;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.scroll-to-top {
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.scroll-to-top:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo, .page-title, .navigation {
+        flex: none;
+        width: 100%;
+    }
+
+    .navigation ul {
+        margin-top: 20px;
+    }
+
+    .service-content {
+        flex-direction: column;
+    }
+
+    .service-info, .service-gallery {
+        max-width: 100%;
+    }
+}
